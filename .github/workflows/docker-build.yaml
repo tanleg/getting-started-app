@@ -24,10 +24,3 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: docker push usernametanguy/getting-started-app:latest
-
-
-# - checkout code
-# -ls
-# - docker build
-# - docker images
-# - docker push
