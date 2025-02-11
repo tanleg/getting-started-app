@@ -17,13 +17,13 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t getting-started-app:latest .
+        run: docker build -t usernametanguy/getting-started-app:latest .
 
       - name: List Docker images
         run: docker images
 
       - name: Push Docker image to Docker Hub
-        run: docker push getting-started-app:latest
+        run: docker push usernametanguy/getting-started-app:latest
 
 
 # - checkout code
